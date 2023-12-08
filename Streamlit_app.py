@@ -28,7 +28,7 @@ def main():
         menu_definition=menu_data,
         override_theme=over_theme,
         home_name='Home',
-        login_name='Logout',
+        # login_name='Logout',
         hide_streamlit_markers=False, #will show the st hamburger as well as the navbar now!
         sticky_nav=True, #at the top or not
         sticky_mode='pinned', #jumpy or not-jumpy, but sticky or pinned
