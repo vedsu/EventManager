@@ -78,7 +78,11 @@ def main():
             status = event.get('Status')
             document = event.get("Document")
             date = event.get("Date")
-            date_from_database = datetime.strptime(date, "%Y-%m-%d").date()
+            # Convert the string to a datetime object
+            original_date = datetime.strptime(date, "%Y-%m-%d")
+                
+            # Format the datetime object as a string with the desired format
+            formatted_date_string = original_date.strftime("%d-%m-%Y")
             if status!="Completed":
                 if document !=None:
                     # Display PDF content as a link
@@ -93,4 +97,4 @@ def main():
                     with col1:
                         # Extract the part before the first occurrence of '-' or ':'
                         
-                        st.caption(f"{count} - {date_from_database} : {webinar} : {pdf_href}", unsafe_allow_html=True)
+                        st.caption(f"{count} - {formatted_date_string} : {webinar} : {pdf_href}", unsafe_allow_html=True)
