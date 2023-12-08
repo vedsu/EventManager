@@ -45,9 +45,9 @@ def main():
     # elif menu_id=='Upload Doc':
     #     # st.info('Upload Doc')
     #     Upload.main()
-    elif menu_id=='Logout':
-        # st.info('Logout')
-        Logout.main()
+    # elif menu_id=='Logout':
+    #     # st.info('Logout')
+    #     Logout.main()
     elif menu_id=='Documents':
         # st.info('Documents')
         Documents.main()
