@@ -17,7 +17,7 @@ def main():
         {'icon': "fas fa-tachometer-alt", 'label':"Dashboard",'ttip':"I'm the Dashboard tooltip!"}, #can add a tooltip message
         # {'icon': "fa-solid fa-radar",'label':"Dropdown1", 'submenu':[{'id':' subid11','icon': "fa fa-paperclip", 'label':"Sub-item 1"},{'id':'subid12','icon': "💀", 'label':"Sub-item 2"},{'id':'subid13','icon': "fa fa-database", 'label':"Sub-item 3"}]},
         # {'id':' Crazy return value 💀','icon': "💀", 'label':"History"},
-        {'icon': "far fa-arrow-alt-circle-up", 'label':"Upload Doc"},
+        # {'icon': "far fa-arrow-alt-circle-up", 'label':"Upload Doc"},
         {'icon': "far fa-calendar-alt", 'label':"History"},
         {'icon': "far fa-chart-bar", 'label':"Documents"},#no tooltip message
         # x{'icon': "fa-solid fa-radar",'label':"Dropdown2", 'submenu':[{'label':"Sub-item 1", 'icon': "fa fa-meh"},{'label':"Sub-item 2"},{'icon':'🙉','label':"Sub-item 3",}]},
@@ -42,9 +42,9 @@ def main():
     elif menu_id=='History':
         # st.info('History')
         History.main()
-    elif menu_id=='Upload Doc':
-        # st.info('Upload Doc')
-        Upload.main()
+    # elif menu_id=='Upload Doc':
+    #     # st.info('Upload Doc')
+    #     Upload.main()
     elif menu_id=='Logout':
         # st.info('Logout')
         Logout.main()
