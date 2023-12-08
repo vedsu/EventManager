@@ -99,6 +99,6 @@ def main():
                         
                         # st.caption(f"{count} - {formatted_date_string} : {webinar} : {pdf_href}", unsafe_allow_html=True)
                         st.caption( f"<span style='color: blue; font-weight: bold;'>{count}</span> - " 
-                                    f"<span style='color: green; font-weight: bold;'>{date_from_database}</span> : "
+                                    f"<span style='color: green; font-weight: bold;'>{formatted_date_string}</span> : "
                                     f"<span style='color: red;'>{webinar}</span> : "
                                     f"<a href='{pdf_href}' style='color: purple;' target='_blank'>Download PDF</a>",unsafe_allow_html=True)
