@@ -98,7 +98,7 @@ def main():
                         # Extract the part before the first occurrence of '-' or ':'
                         
                         # st.caption(f"{count} - {formatted_date_string} : {webinar} : {pdf_href}", unsafe_allow_html=True)
-                        st.caption( f"<span style='color: black; font-weight: bold;'>{count}</span> - " 
-                                    f"<span style='color: blue;'>{formatted_date_string}</span> : "
+                        st.caption( f"<span style='color: yellow; font-weight: bold;'>{count}</span> - " 
+                                    f"<span style='color: black;'>{formatted_date_string}</span> : "
                                     f"<span style='font-weight: bold;'>{webinar}</span> : "
                                     f"<a href='{pdf_href}' style='color: red;' target='_blank'>{pdf_href}</a>",unsafe_allow_html=True)
