@@ -101,4 +101,4 @@ def main():
                         st.caption( f"<span style='color: black; font-weight: bold;'>{count}</span> - " 
                                     f"<span style='color: blue; font-weight: bold;'>{formatted_date_string}</span> : "
                                     f"{webinar} : "
-                                    f"<a href='{pdf_href}' style='color: red;' target='_blank'>pdf_href</a>",unsafe_allow_html=True)
+                                    f"<a href='{pdf_href}' style='color: red;' target='_blank'>{pdf_href}</a>",unsafe_allow_html=True)
