@@ -102,7 +102,7 @@ def main():
         time.sleep(2)
         
         # Refresh the app
-        st.experimental_rerun()  
+        st.rerun  
         
         
     
