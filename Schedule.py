@@ -35,6 +35,9 @@ collection = db['Webinars']
 
 def main():
     
+    event_input = None
+    event_speaker = None
+    event_duration = None
     
     today = datetime.now()
     start_date = today - timedelta(days=today.day - 1)
