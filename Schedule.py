@@ -98,6 +98,12 @@ def main():
         new_document = {'Webinar':event_input,'Speaker': event_speaker, 'Website':event_website, 'Industry': event_industry, 'Date':formatted_date, 'Time':formatted_time, 'Day': weekday_name, 'Duration':event_duration,'Status':'Active'}
         try:                                
             collection.insert_one(new_document)
+            st.sidebar.success("Event Created")
+            # collection2.insert_one(new_document)
+        except:
+            st.sidebar.error("Failed to create event")
+        try:                                
+            # collection.insert_one(new_document)
             collection2.insert_one(new_document)
             st.sidebar.success("Event Created")
         except:
