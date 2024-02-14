@@ -29,10 +29,10 @@ def init_connection():
 
 client = init_connection()
 db= client['EventDatabase']
-db2= client['Conferences']
+# db2= client['Conferences']
 
 collection = db['Webinars']
-collection2 = db2['Webinar']
+# collection2 = db2['Webinar']
 
 
 
@@ -102,12 +102,12 @@ def main():
             # collection2.insert_one(new_document)
         except:
             st.sidebar.error("Failed to create event")
-        try:                                
-            # collection.insert_one(new_document)
-            collection2.insert_one(new_document)
-            st.sidebar.success("Event Created")
-        except:
-            st.sidebar.error("Failed to create event")
+        # try:                                
+        #     # collection.insert_one(new_document)
+        #     collection2.insert_one(new_document)
+        #     st.sidebar.success("Event Created")
+        # except:
+        #     st.sidebar.error("Failed to create event")
         
         time.sleep(2)
         
@@ -277,13 +277,13 @@ def main():
             st.sidebar.success(f"Status Changed to {status_value}")
         except:
             st.siderbar.error("Failed!")
-        try: 
-            collection2.update_one(
-                      {"_id": id_value},
-                        {"$set": {"Status": status_value}})
-            st.sidebar.success(f"Status Changed to {status_value}")
-        except:
-            st.siderbar.error("Failed!")
+        # try: 
+        #     collection2.update_one(
+        #               {"_id": id_value},
+        #                 {"$set": {"Status": status_value}})
+        #     st.sidebar.success(f"Status Changed to {status_value}")
+        # except:
+        #     st.siderbar.error("Failed!")
         time.sleep(1)
 
     
