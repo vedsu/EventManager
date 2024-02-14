@@ -277,6 +277,13 @@ def main():
             st.sidebar.success(f"Status Changed to {status_value}")
         except:
             st.siderbar.error("Failed!")
+        try: 
+            collection2.update_one(
+                      {"_id": id_value},
+                        {"$set": {"Status": status_value}})
+            st.sidebar.success(f"Status Changed to {status_value}")
+        except:
+            st.siderbar.error("Failed!")
         time.sleep(1)
 
     
