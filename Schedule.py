@@ -29,8 +29,11 @@ def init_connection():
 
 client = init_connection()
 db= client['EventDatabase']
+db2= client['Conferences']
 
 collection = db['Webinars']
+collection2 = db2['Webinar']
+
 
 
 def main():
@@ -95,6 +98,7 @@ def main():
         new_document = {'Webinar':event_input,'Speaker': event_speaker, 'Website':event_website, 'Industry': event_industry, 'Date':formatted_date, 'Time':formatted_time, 'Day': weekday_name, 'Duration':event_duration,'Status':'Active'}
         try:                                
             collection.insert_one(new_document)
+            collection2.insert_one(new_document)
             st.sidebar.success("Event Created")
         except:
             st.sidebar.error("Failed to create event")
